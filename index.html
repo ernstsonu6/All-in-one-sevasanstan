@@ -2,106 +2,69 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ऑल इन वन सेवा संस्थान | पटना, बिहार</title>
-  <meta name="description" content="ऑल इन वन सेवा संस्थान, पटना जिला स्थित एक गैर-लाभकारी संगठन है जो शिक्षा, स्वास्थ्य और महिला सशक्तिकरण के क्षेत्र में काम करता है।">
-  <meta name="keywords" content="NGO, सेवा संस्थान, पटना, शिक्षा, स्वास्थ्य, महिला सशक्तिकरण, बाल अधिकार, ऑल इन वन सेवा संस्थान">
-  <meta name="author" content="सोनू कुमार">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सोनूरी होटल बुकिंग</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f8ff;
-    }
-    header {
-      background-color: #005fa3;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
-    nav {
-      background-color: #003d66;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 25px;
-      max-width: 900px;
-      margin: auto;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin-top: 20px;
-    }
-    footer {
-      text-align: center;
-      background-color: #222;
-      color: #ccc;
-      padding: 20px;
-      margin-top: 30px;
-    }
-    ul li {
-      margin-bottom: 8px;
-    }
-    @media screen and (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-    }
+    body { font-family: 'Poppins', sans-serif; }
   </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-8 shadow-lg">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">सोनूरी होटल</h1>
+      <p class="text-lg mt-2">दानियावां, पटना</p>
+    </div>
+  </header>
 
-<header>
-  <h1>ऑल इन वन सेवा संस्थान</h1>
-  <p>एक कदम सेवा की ओर | अध्यक्ष: श्री सोनू कुमार</p>
-</header>
+  <!-- Room Information Section -->
+  <section class="container mx-auto py-16 px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-semibold text-blue-600">कमरों की जानकारी</h2>
+      <p class="text-lg mt-2 text-gray-600">हमारे पास AC और Non-AC रूम उपलब्ध हैं</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- AC Room Card -->
+      <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-semibold text-blue-600 mb-4">AC कमरा</h3>
+        <p class="mb-6">सुविधाएं: AC, TV, अटैच्ड बाथरूम</p>
+        <p class="text-2xl font-bold text-blue-500">₹1200 प्रति रात</p>
+      </div>
+      <!-- Non-AC Room Card -->
+      <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-semibold text-blue-600 mb-4">Non-AC कमरा</h3>
+        <p class="mb-6">सुविधाएं: फैन, TV, अटैच्ड बाथरूम</p>
+        <p class="text-2xl font-bold text-blue-500">₹800 प्रति रात</p>
+      </div>
+    </div>
+  </section>
 
-<nav>
-  <a href="#about">हमारे बारे में</a>
-  <a href="#work">हमारा कार्य</a>
-  <a href="#contact">संपर्क करें</a>
-</nav>
+  <!-- Booking Section -->
+  <section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-center text-3xl font-semibold text-blue-600 mb-10">बुकिंग करें</h2>
+      <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-xl space-y-6">
+        <input type="text" placeholder="पूरा नाम" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <input type="tel" placeholder="मोबाइल नंबर" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <input type="date" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <select class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          <option value="">रूम प्रकार चुनें</option>
+          <option value="AC">AC कमरा</option>
+          <option value="Non-AC">Non-AC कमरा</option>
+        </select>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">बुक करें</button>
+      </form>
+    </div>
+  </section>
 
-<section id="about">
-  <h2>हमारे बारे में</h2>
-  <p>ऑल इन वन सेवा संस्थान, बिहार के पटना जिले में स्थित एक पंजीकृत गैर-लाभकारी संगठन है। हमारा उद्देश्य ग्रामीण और वंचित समुदायों को शिक्षा, स्वास्थ्य, महिला सशक्तिकरण, और बाल अधिकारों के प्रति जागरूक बनाना है।</p>
-</section>
-
-<section id="work">
-  <h2>हमारे कार्य</h2>
-  <ul>
-    <li>बाल अधिकार जागरूकता अभियान</li>
-    <li>सरकारी स्कूलों में शिक्षा सहायता</li>
-    <li>स्वास्थ्य जांच और चिकित्सा शिविर</li>
-    <li>महिलाओं को आत्मनिर्भर बनाने हेतु प्रशिक्षण</li>
-    <li>स्वरोज़गार और कृषि प्रशिक्षण कार्यक्रम</li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>संपर्क करें</h2>
-  <p><strong>पता:</strong> तरौरा, जिला पटना, बिहार - 801305</p>
-  <p><strong>मोबाइल:</strong> <a href="tel:+919060709157">9060709157</a></p>
-  <p><strong>ईमेल:</strong> contact@aivsevasansthan.org (यदि उपलब्ध हो तो)</p>
-</section>
-
-<footer>
-  &copy; 2025 ऑल इन वन सेवा संस्थान | अध्यक्ष: श्री सोनू कुमार<br>
-  डिज़ाइन किया गया ChatGPT द्वारा | सभी अधिकार सुरक्षित
-</footer>
-
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-6 mt-16">
+    <div class="container mx-auto text-center">
+      <p>संपर्क करें: 9060709157 | ईमेल: ernstsonu6@gmail.com</p>
+      <p>स्थान: ग्राम तरौरा, पोस्ट पीरबढ़ोना, थाना दानियावां, जिला पटना, पिनकोड 801305</p>
+    </div>
+  </footer>
 </body>
-  </html>
+</html>
